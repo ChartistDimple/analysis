@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow, noarchive" />
-  <title>Track Record Preview — 김호문</title>
+  <title>Chartist Dimple — Track Record</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link
@@ -76,7 +76,7 @@
       Chartist Dimple
     </h1>
     <p class="text-xs md:text-sm text-gray-400 tracking-[0.3em] uppercase mt-4">
-      Market Analysis · Track Record
+      Market Analysis
     </p>
   </header>
 
@@ -98,7 +98,8 @@
         </h3>
         <p class="text-sm text-gray-500 max-w-xl mx-auto leading-relaxed">
           차트 분석 공유 기록에 대한 정리<br />
-          분석 대상은 주식, 가상자산, 환율, 지수 등 대형주이고 중장기 뷰 위주
+          분석 대상은 주식, 가상자산, 환율, 지수 등 대형주<br />
+          중장기 관점 위주
         </p>
       </div>
 
@@ -150,16 +151,18 @@
         </button>
         <span class="w-2"></span>
         <button
-          class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50"
+          class="filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50"
           data-filter="youtube"
         >
-          ▶ YouTube
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#FF0000" fill-rule="evenodd" aria-label="YouTube"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
         </button>
         <button
-          class="filter-btn px-4 py-2 rounded-full text-sm font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50"
+          class="filter-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50"
           data-filter="tradingview"
         >
-          ◈ TradingView
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#000000" aria-label="TradingView"><path d="M15.8654 8.2789c0 1.3541-1.0978 2.4519-2.452 2.4519-1.354 0-2.4519-1.0978-2.4519-2.452 0-1.354 1.0978-2.4518 2.452-2.4518 1.3541 0 2.4519 1.0977 2.4519 2.4519zM9.75 6H0v4.9038h4.8462v7.2692H9.75Zm8.5962 0H24l-5.1058 12.173h-5.6538z"/></svg>
+          TradingView
         </button>
       </div>
 
@@ -183,8 +186,7 @@
       <!-- Footnote -->
       <p class="text-xs text-gray-400 text-center mt-10 leading-relaxed">
         차트 분석에 대한 근거는 비공개<br />
-        데일리 매매를 위한 지지 / 저항 공유 기록은 생략<br />
-        결과 한 줄은 해당 분석의 시간적 프레임을 고려하여 기록 예정
+        데일리 매매를 위한 지지 / 저항 공유 기록은 생략
       </p>
     </div>
   </section>
@@ -233,9 +235,14 @@
       return `<span class="hit-progress inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs">⋯</span>`;
     }
 
-    function platformIcon(p) {
-      if (p === 'youtube')     return `<span style="color:#CC0000">▶</span>`;
-      if (p === 'tradingview') return `<span class="text-primary">◈</span>`;
+    function platformIcon(p, size) {
+      const s = size || 24;
+      if (p === 'youtube') {
+        return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="${s}" height="${s}" fill="#FF0000" fill-rule="evenodd" aria-label="YouTube"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`;
+      }
+      if (p === 'tradingview') {
+        return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="${s}" height="${s}" fill="#000000" aria-label="TradingView"><path d="M15.8654 8.2789c0 1.3541-1.0978 2.4519-2.452 2.4519-1.354 0-2.4519-1.0978-2.4519-2.452 0-1.354 1.0978-2.4518 2.452-2.4518 1.3541 0 2.4519 1.0977 2.4519 2.4519zM9.75 6H0v4.9038h4.8462v7.2692H9.75Zm8.5962 0H24l-5.1058 12.173h-5.6538z"/></svg>`;
+      }
       return '';
     }
 
@@ -262,7 +269,7 @@
           <div class="md:col-span-1 md:text-center">${hitBadge(e.hit)}</div>
           <div class="md:col-span-1 md:text-center">
             <a href="${e.url}" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-100 text-base">
+               class="inline-flex items-center justify-center hover:opacity-60 transition-opacity p-1">
               ${platformIcon(e.platform)}
             </a>
           </div>
