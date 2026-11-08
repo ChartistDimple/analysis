@@ -110,7 +110,7 @@
       <!-- Stats -->
       <div class="grid grid-cols-4 gap-3 mb-8 max-w-2xl mx-auto">
         <div class="text-center py-4 px-2 border border-gray-200 rounded-lg">
-          <div class="text-2xl font-bold text-gray-900" id="stat-total">26</div>
+          <div class="text-2xl font-bold text-gray-900" id="stat-total">34</div>
           <div class="text-xs text-gray-500 mt-1">전체</div>
         </div>
         <div class="text-center py-4 px-2 border border-gray-200 rounded-lg">
@@ -196,7 +196,7 @@
   </section>
 
   <script>
-    // ====== DATA — 26건 (시계열 ASC: 가장 오래된 → 최신) ======
+    // ====== DATA — 34건 (시계열 ASC: 가장 오래된 → 최신) ======
     const afterLink = (url, label) =>
       `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">→ After 차트 (${label})</a>`;
 
@@ -227,6 +227,14 @@
       { date: '2025.04.28', tag: 'US',      title: '나스닥 / S&P500 / 미국주식 / 전량매도 / 매수버튼삭제',                       url: 'https://youtu.be/XsJf2OmRjgA',                        platform: 'youtube',     dir: 'down',    category: 'index',  result: '', hit: 'miss' },
       { date: '2025.05.26', tag: 'BTC',     title: '비트코인 / 매수 버튼 안녕',                                                  url: 'https://youtu.be/OHxFpxLNqC8',                        platform: 'youtube',     dir: 'down',    category: 'crypto', result: '', hit: 'hit' },
       { date: '2025.10.10', tag: 'BTC',     title: '비트코인 — 고통스러운 하락장이 진행될 것',                                    url: 'https://www.tradingview.com/x/Af5DZ7nA/',             platform: 'tradingview', dir: 'down',    category: 'crypto', result: afterLink('https://www.tradingview.com/x/RVMgnU72/', '2026.02.14'), hit: 'hit' },
+      { date: '2026.02.17', tag: 'KR',      title: '하나금융지주 주봉',                                                          url: 'https://www.tradingview.com/x/URbwBgkM/',             platform: 'tradingview', dir: 'down',    category: 'stock',  result: '분석 후 고점 횡보중 · 관점 유지', hit: 'progress' },
+      { date: '2026.02.17', tag: 'KR',      title: 'KB금융지주 주봉',                                                            url: 'https://www.tradingview.com/x/GyBdCtnV/',             platform: 'tradingview', dir: 'down',    category: 'stock',  result: '분석 후 고점 횡보중 · 관점 유지', hit: 'progress' },
+      { date: '2026.02.17', tag: 'KR',      title: '메리츠금융지주 주봉',                                                        url: 'https://www.tradingview.com/x/ZCJtKf0i/',             platform: 'tradingview', dir: 'down',    category: 'stock',  result: '분석 후 고점 횡보중 · 관점 유지', hit: 'progress' },
+      { date: '2026.02.17', tag: 'KR',      title: '신한금융지주 월봉',                                                          url: 'https://www.tradingview.com/x/5oet3UY9/',             platform: 'tradingview', dir: 'down',    category: 'stock',  result: '분석 후 고점 횡보중 · 관점 유지', hit: 'progress' },
+      { date: '2026.02.17', tag: 'US',      title: '나스닥 100 (NDX) 주봉',                                                      url: 'https://www.tradingview.com/x/EH6w5t12/',             platform: 'tradingview', dir: 'down',    category: 'index',  result: '현재까지 불일치 · 장기 관점 유지', hit: 'progress' },
+      { date: '2026.05.11', tag: 'KR',      title: '코스피 / 매수 버튼 삭제',                                                    url: 'https://www.tradingview.com/x/pTZT4KU1/',             platform: 'tradingview', dir: 'down',    category: 'index',  result: '분석 후 약 25% 추가 상승 후 고점 대비 약 44% 하락 · 일부 적중 / 일부 불일치', hit: 'progress' },
+      { date: '2026.05.30', tag: 'KR',      title: '유한양행 주봉',                                                              url: 'https://www.tradingview.com/x/ijP8Oq8i/',             platform: 'tradingview', dir: 'up',      category: 'stock',  result: '분석 후 약 23% 추가 하락. 이후 다시 반등하여 횡보 중. 일부 적중 / 일부 불일치', hit: 'progress' },
+      { date: '2026.10.18', tag: 'KR',      title: 'SK하이닉스',                                                                 url: 'https://www.tradingview.com/x/6rvFNncv/',             platform: 'tradingview', dir: 'up',      category: 'stock',  result: '', hit: 'progress' },
     ];
 
     // ====== Render ======
